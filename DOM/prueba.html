@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Más sobre Mapaches</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+        header {
+            background-color: #ffa4d2; 
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #ffffff;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+        .parrafo1 {
+            font-size: 1.5rem;
+            color: #4a5d23; 
+            font-weight: 700;
+            text-shadow: 4px 4px 4px rgb(255 255 255);
+            text-align: left;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 4rem);
+        }
+        .info-card {
+            background: transparent;
+            border-radius: 8px;
+            box-shadow: 0 5px 8px rgba(17, 99, 31, 0.589);
+            padding: 2rem;
+            width: 80%;
+            max-width: 600px;
+            margin: 1rem;
+            transition: transform 0.3s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-10px);
+        }
+        button {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.25rem;
+            background-color: #4a5d23;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease, color 0.6s ease, transform 0.3s ease;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #ff66b2; 
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: auto;
+            background-color: #ffa4d2; 
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Descubre Más sobre Mapaches</h1>
+    </header>
+
+    <div class="content">
+        <div class="info-card">
+            <p id="miparrafo" class="parrafo1">¿Quieres un dato curioso?</p>
+            <button id="miboton">¡Haz clic en mí!</button>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        const boton = document.getElementById("miboton");
+        const parrafo = document.getElementById("miparrafo");
+        const titulo = document.getElementById("titulo");
+
+        const nuevoTexto = "Los mapaches pueden girar sus patas delanteras casi 180 grados";
+        const imagenFondo = 'images/mapache.jpg'; 
+
+        boton.addEventListener("click", function () {
+            parrafo.innerHTML = 'Dato curioso: ' + nuevoTexto;
+            parrafo.style.color = '#FFFFF';
+            parrafo.style.fontSize = '2rem'; 
+
+            titulo.style.textShadow = 'none'; 
+
+            document.body.style.backgroundColor = 'transparent'; 
+            document.body.style.backgroundImage = `url(${imagenFondo})`; 
+            document.body.style.backgroundSize = '90%'; 
+            document.body.style.backgroundPosition = 'center'; 
+            boton.style.backgroundColor = '#4a5d23'; 
+            boton.style.color = '#fff';
+            boton.textContent= "¿Lo sabias?";
+        });
+    </script>
+</body>
+</html>
