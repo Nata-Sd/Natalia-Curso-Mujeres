@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-    <h1>Aprendizaje  React</h1>
-    <p>Selects Añadidos</p>
+    <h1>Hola, Bienvenido </h1>
+    <p>Registra la siguiente información</p>
     <hr />
 
     <Selects/>

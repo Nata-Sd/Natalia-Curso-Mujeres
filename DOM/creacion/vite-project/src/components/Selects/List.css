@@ -1,0 +1,66 @@
+body{
+background-color: #fce2f8ad;
+background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+}
+
+.selects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: url('https://www.transparenttextures.com/patterns/geometry.png'), 
+                linear-gradient(135deg, #f0f4f8, #e0e6f0);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0e6f0; 
+    transition: border 0.3s ease;
+}
+
+.selects-container:hover {
+    border: 1px solid #8c4aa0; 
+}
+
+.Label-select {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    text-transform: uppercase; 
+}
+
+.Label-select:hover {
+    color: #e98fc0; 
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #e98fc0;
+    border-radius: 4px;
+    background-color: #ffffff; 
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #8c4aa0;
+    box-shadow: 0 0 8px rgba(140, 74, 160, 0.5);
+}
+
+option {
+    padding: 10px;
+}
+
+select + select {
+    margin-top: 20px;
+}
+
+select:hover {
+    background-color: #f1f1f1; 
+    border-color: #8c4aa0; 
+}
