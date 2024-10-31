@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faReact, faAngular, faPython, faJs, faGitAlt, faCss3Alt, } from '@fortawesome/free-brands-svg-icons';
 
 import mapache from "../../assets/images/mapachehover.jpg";
-
+import centrode from "../../assets/images/proyecto1.jpg"; 
 import './Home.css';
 
 const Home = () => {
@@ -38,7 +38,7 @@ const Home = () => {
             titulo: "Software de agendamiento de citas para centro de estética",
             año: "2024",
             descripcion: "Desarrollo completo de un sistema de agendamiento de citas para un centro de estética facial. Manejando la lógica de agendamiento, bloqueo de horas, gestión de usuarios y servicios. Además, trabajé en equipo utilizando metodologías ágiles, colaborando con otros desarrolladores para integrar funcionalidades y asegurar la calidad del software.",
-            imagen: "/ruta-imagen-1.jpg", 
+            imagen: "centrode", 
             tecnologias: ["React", "Node.js", "Supabase"]
         },
     ];    
@@ -105,7 +105,7 @@ const Home = () => {
     {proyectosData.map((proyecto, index) => (
             <div className='proyecto-card' key={proyecto.id}>
                 <div className='proyecto-imagen'>
-                    <img src={proyecto.imagen} alt={proyecto.titulo} />
+                <img src={proyecto.imagen} alt={proyecto.titulo} />
                     <div className='proyecto-overlay'>
                         <span className='proyecto-año'>{proyecto.año}</span>
                     </div>
